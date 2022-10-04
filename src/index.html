@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindDemo</title>
+    <link rel="stylesheet" href="../dist/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+</head>
+
+<body>
+    <nav id ="mainNav" class="bg-white fixed-top  border-b-2 border-orange-900/50">
+        <div class="container mx-auto flex py-4 ">
+            <div class=" flex mr-auto px-6 md:hidden" onclick="toggle()">
+                <img src="../assets/images/hamburger-menu.svg" id="ham" alt="">
+            </div>
+            <div class="flex md:flex-row flex-col justify-between w-full items-center" id="toggleIcon">
+                <div>
+                    <img src="../assets/images/logo.png" id="logo" class="" alt="">
+                </div>
+                <div >
+                    <ul id="ulItems" class="md:flex md:gap-4 hidden">
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">PORTFOLIO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+ 
+    </nav>
+
+    <section class="bg-primary/30" style="padding-top: 150px;">
+        <div class="container flex justify-around flex-col items-center mx-auto pt-4  ">
+            <div class=" flex gap-4 overflow-x-auto snap-x ">
+                <div class="flex-shrink-0 snap-center">
+                    <img src="../assets/images/haus-img-1.jpg" alt="" class="w-full object-cover">
+                </div>
+                <div class="flex-shrink-0 snap-center">
+                    <img src="../assets/images/haus-img-2.jpg" alt="" class="w-full object-cover">
+                </div>
+                <div class="flex-shrink-0 snap-center">
+                    <img src="../assets/images/haus-img-3.jpg" alt="" class="w-full object-cover">
+                </div>
+            </div>
+
+
+            <div class="text-center flex items-center flex-col p-7">
+                <div>
+                    <p class="font-extralight italic text-xl">Hey there</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-4xl">I'M HAUS</p>
+                </div>
+                <div class="my-4">
+                    <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quasi
+                        officiis nostrum doloribus
+                        deserunt mollitia vero quas harum non amet. Assumenda, aliquam? Reprehenderit autem non enim
+                        earum
+                        optio! Iusto, repudiandae.</p>
+                </div>
+                <div class="italic border-2 border-[#787431] py-4 tracking-widest lg:w-[600px] sm:px-10">
+                    <p> READ THE WHOLE STORY</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-amber-100/50">
+        <div class="container flex md:flex-row md md:justify-between flex-col mx-auto">
+            <div class="flex justify-center">
+                <img class="my-8" src="../assets/images/get_started.jpg" alt="">
+            </div>
+            <div class="flex flex-col m-4 mb-0 pb-6">
+
+                <p class=" text-2xl md:my-12 mb-0 text-left font-extralight">Condimentum Megna Lokes Vel Sodales Mollis Nisl Nibh
+                    Oranare Eros.</p>
+
+                <hr class="bg-teal-600 w-32 my-4" style="height:4px;">
+
+                <p class="leading-relaxed md:my-12 text-stone-900/50 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Exercitationem nulla tenetur sed fuga
+                    veniam, culpa hic voluptate illum earum eius. Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit!
+                </p>
+
+                <div class="italic w-32 border-2 md:my-12 border-[#787431] py-2 tracking-widest text-center">
+                    <p>Get Started</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex md:hidden">
+        <div class="container flex justify-center items-center flex-col mx-auto">
+            <div class="text-center my-7 ">
+                <p class="font-extralight italic text-xl my-2">THE PORTFOLIO</p>
+                <P class="font-semibold text-3xl my-2">VIEW RECENT WORK</P>
+            </div>
+
+            <div class="flex overflow-x-auto snap-x ">
+                <div class="flex-shrink-0 snap-center">
+                    <img src="../assets/images/explore-3.jpg" alt="" class="w-80 object-cover">
+                </div>
+                <div class="flex-shrink-0 snap-center">
+                    <img src="../assets/images/explore-1.jpg" alt="" class="w-80 object-cover">
+                </div>
+                <div class="flex-shrink-0 snap-center">
+                    <img src="../assets/images/explore-4.jpg" alt="" class="w-80 object-cover">
+                </div>
+                <div class="flex-shrink-0 snap-center">
+                    <img src="../assets/images/explore-2.jpg" alt="" class="w-80 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hidden md:flex my-8 ">
+        <div class="flex container mx-auto justify-center ">
+            <div class="flex flex-col justify-between h-96">
+                <img src="../assets/images/explore-1.jpg" class="max-w-[300px]" alt="">
+                <img src="../assets/images/explore-2.jpg" class="max-w-[300px]" alt="">
+            </div>
+            <div class="flex flex-col justify-center h-96">
+                <div class="text-center my-7 ">
+                    <p class="font-extralight italic text-xl my-2">THE PORTFOLIO</p>
+                    <P class="font-semibold text-3xl my-2">VIEW RECENT WORK</P>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between h-96">
+                <img src="../assets/images/explore-3.jpg" class="max-w-[300px]" alt="">
+                <img src="../assets/images/explore-4.jpg" class="max-w-[300px]" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary/30">
+        <div class="container flex flex-col md:flex-row  mx-auto my-8">
+            <div class="flex gap-8 p-8 ">
+                <div class="">
+                    <img src="../assets/images/creative-tool1.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="../assets/images/creative-tool2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="flex flex-col m-4 mb-0 pb-6">
+
+                <p class="  text-left font-extralight">Tools For Creatives</p>
+
+                <hr class="bg-teal-600 w-32 md:my-12 my-4" style="height:4px;">
+
+                <p class="leading-relaxed md:my-12 text-stone-900/50 mb-4">Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit.
+                    Exercitationem nulla tenetur sed fuga
+                    veniam, culpa hic voluptate illum earum eius. Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit!
+                </p>
+
+                <div class="italic w-40 border-2 md:my-12 border-[#787431] py-2 tracking-widest text-center">
+                    <p>Go To The Blog</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container mx-auto flex gap-4 overflow-x-auto snap-x">
+            <div class="text-center snap-center min-w-[300px] ">
+                <div class="flex flex-col items-center">
+                    <div class="border-2 border-[#787431] p-7 hover:bg-primary/40">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eligendi labore repellendus
+                            nihil
+                            placeat aspernatur repudiandae tempora nemo voluptate est.</p>
+                    </div>
+                    <div class="max-w-[70px]" style="margin-top:-20;">
+                        <img class="ring-2 ring-[#787431] ring-offset-4 rounded-full"
+                            src="../assets/images/client-1.png" alt="">
+                        <p></p>
+                    </div>
+                    <p class="py-4">CLIENT NAME HERE</p>
+                </div>
+            </div>
+
+            <div class="text-center snap-center min-w-[300px]">
+                <div class="flex flex-col items-center">
+                    <div class="border-2 border-[#787431] p-7 hover:bg-primary/40">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eligendi labore repellendus
+                            nihil
+                            placeat aspernatur repudiandae tempora nemo voluptate est.</p>
+                    </div>
+                    <div class="max-w-[70px]" style="margin-top:-20;">
+                        <img class="ring-2 ring-[#787431] ring-offset-4 rounded-full"
+                            src="../assets/images/client-2.png" alt="">
+                    </div>
+                    <p class="py-4">CLIENT NAME HERE</p>
+                </div>
+            </div>
+
+            <div class="text-center snap-center min-w-[300px]">
+                <div class="flex flex-col items-center">
+                    <div class="border-2 border-[#787431] p-7 hover:bg-primary/40">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eligendi labore repellendus
+                            nihil
+                            placeat aspernatur repudiandae tempora nemo voluptate est.</p>
+                    </div>
+                    <div class="max-w-[70px]" style="margin-top:-20;">
+                        <img class="ring-2 ring-[#787431] ring-offset-4 rounded-full"
+                            src="../assets/images/client-3.png" alt="">
+                    </div>
+                    <p class="py-4">CLIENT NAME HERE</p>
+                </div>
+            </div>
+
+            <div class="text-center snap-center min-w-[300px]">
+                <div class="flex flex-col items-center">
+                    <div class="border-2 border-[#787431] p-7 hover:bg-primary/40">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eligendi labore repellendus
+                            nihil
+                            placeat aspernatur repudiandae tempora nemo voluptate est.</p>
+                    </div>
+                    <div class="max-w-[70px]" style="margin-top:-20;">
+                        <img class="ring-2 ring-[#787431] ring-offset-4 rounded-full"
+                            src="../assets/images/client-1.png" alt="">
+                    </div>
+                    <p class="py-4">CLIENT NAME HERE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-primary/30">
+        <div class="container mx-auto flex justify-center">
+            <div class=" flex overflow-x-auto snap-x gap-4 my-4 ">
+                <div class="flex-shrink-0 snap-center ">
+                    <img src="../assets/images/slider1.jpg" class="object-cover aspect-video my-4 max-w-[300px]" alt="">
+                </div>
+                <div class="flex-shrink-0 snap-center ">
+                    <img src="../assets/images/explore-3.jpg" class="object-cover aspect-video my-4 max-w-[300px]"
+                        alt="">
+                </div>
+                <div class="flex-shrink-0 snap-center">
+                    <img src="../assets/images/explore-2.jpg" class="object-cover aspect-video my-4 max-w-[300px]"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <ul class="nav nav-tabs flex flex-wrap list-none border-b-0 p-5 justify-center" id="ltp" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a href="#lifestyle" class="nav-link px-6 py-3 my-2 active" id="lifestyle" data-bs-toggle="pill"
+                        data-bs-target="#lifestyle" role="tab">LifeStyle
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="#travel" class="nav-link px-6 py-3 my-2 active" id="travel" data-bs-toggle="pill"
+                        data-bs-target="#travel" role="tab">Travel
+                    </a>
+                </li class="nav-item" role="presentation">
+                <li class="nav-item" role="presentation">
+                    <a href="#photos" class="nav-link px-6 py-3 my-2 active" id="photos" data-bs-toggle="pill"
+                        data-bs-target="#photos" role="tab">Photos
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="tabContant">
+                <div class="tab-pane fade show border-2 flex justify-center mx-7 active" role="tabpanel" id="lifestyle">
+                    <p class="first-letter:text-5xl first-letter:font-bold p-5">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Cumque excepturi ducimus repudiandae facilis eaque alias illo beatae iure
+                        impedit
+                        maiores?</p>
+                </div>
+                <div class="tab-pane fade border-2 flex justify-center mx-7 " role="tabpanel" id="travel">
+                    <p class="first-letter:text-5xl first-letter:font-bold p-5">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. </p>
+                </div>
+
+                <div class="tab-pane fade border-2 flex justify-center mx-7 " role="tabpanel" id="photos">
+                    <p class="first-letter:text-5xl first-letter:font-bold p-5">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Cumque excepturi ducimus repudiandae facilis eaque alias illo beatae iure
+                        impedit
+                        maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, dolorem amet! Quas
+                        aliquid explicabo odit incidunt fuga earum ullam. Dolorum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary/30 my-8 text-center">
+        <div class=" hidden md:flex justify-center my-4 text-2xl font-extralight">
+            <p>Let's Collaborate Together</p>
+        </div>
+        
+        <div class="hidden md:flex gap-4 container mx-auto md:columns-2 lg:columns-4 ">
+            <p class="text-stone-900/50 leading-relaxed">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis alias aspernatur harum vitae odit saepe
+                dolorem doloribus tempore et suscipit est amet debitis minus magnam, commodi libero voluptate aperiam
+                non?
+            </p>
+            <p class="text-stone-900/50 leading-relaxed">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis alias aspernatur harum vitae odit saepe
+                dolorem doloribus tempore et suscipit est amet debitis minus magnam, commodi libero voluptate aperiam
+                non?
+
+            </p>
+            <p class=" text-stone-900/50 leading-relaxed">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis alias aspernatur harum vitae odit saepe
+                dolorem doloribus tempore et suscipit est amet debitis minus magnam, commodi libero voluptate aperiam
+                non?
+
+            </p>
+            <p class="text-stone-900/50 leading-relaxed">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis alias aspernatur harum vitae odit saepe
+                dolorem doloribus tempore et suscipit est amet debitis minus magnam, commodi libero voluptate aperiam
+                non?
+
+            </p>
+        </div>
+
+        <div class="felx md:hidden p-8">
+            <div class="justify-center my-4 text-2xl font-extralight text-left">
+                <p>Let's Collaborate Together</p>
+            </div>
+            <p class="text-stone-900/50 leading-relaxed my-4 text-left">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis alias aspernatur harum vitae odit saepe
+                dolorem doloribus tempore et suscipit est amet debitis minus magnam, commodi libero voluptate aperiam
+                non?
+            </p>
+            <div class="italic w-40 border-2  border-[#787431] py-2 tracking-widest text-center my-4">
+                <p>Read More</p>
+            </div>
+        </div>
+
+    </section>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
